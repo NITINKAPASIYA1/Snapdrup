@@ -23,9 +23,10 @@ export async function createUserAccount(user:INewUser) {
             email: newAccount.email,
             username: user.username,
             imageUrl: avatarsUrl,
-        })
+        });
+         
 
-        return newAccount;
+        return newUser;
     } 
     catch (error) {
         console.log(error);
